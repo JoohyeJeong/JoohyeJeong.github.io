@@ -1,0 +1,297 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --ink: #20252c;
+  --muted: #5f6873;
+  --link: #284f78;
+  --line: #d9dee4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link);
+  text-decoration-color: #aebdcb;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #173958;
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+}
+
+.site-shell {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 66px 34px 36px;
+}
+
+.page-layout {
+  align-items: start;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 242px minmax(0, 720px);
+  justify-content: center;
+}
+
+.author-card {
+  position: sticky;
+  text-align: center;
+  top: 42px;
+}
+
+.portrait {
+  border-radius: 3px;
+  height: 236px;
+  margin: 0 auto 18px;
+  overflow: hidden;
+  width: 236px;
+}
+
+.portrait img {
+  display: block;
+  filter: brightness(1.04);
+  height: 100%;
+  object-fit: cover;
+  object-position: 64% 50%;
+  width: 100%;
+}
+
+.author-role {
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.author-role span {
+  display: block;
+}
+
+.author-name {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.profile {
+  padding-bottom: 50px;
+}
+
+.profile p {
+  margin: 0 0 14px;
+}
+
+.profile-links {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.profile-links a {
+  font-weight: 600;
+}
+
+.content-section {
+  border-top: 1px solid var(--line);
+  padding: 42px 0 48px;
+}
+
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+}
+
+.content-section > h2 {
+  font-size: 28px;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin: 0 0 26px;
+  max-width: 780px;
+}
+
+.paper-item h3 {
+  font-size: 18.5px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+.paper-item h3 a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.paper-item p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.self-author {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.subsection-title {
+  border-top: 1px solid var(--line);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-size: 12px !important;
+  font-weight: 700;
+  letter-spacing: 0.12em !important;
+  margin: 38px 0 0 !important;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.paper-list .paper-item,
+.subsection-title + .paper-item {
+  border-top: 1px solid #e8ebee;
+}
+
+.paper-list .paper-item:first-child {
+  border-top: 0;
+}
+
+.paper-item {
+  padding: 0 0 28px;
+}
+
+.paper-list .paper-item,
+.subsection-title + .paper-item {
+  padding-top: 26px;
+}
+
+.paper-detail {
+  align-items: baseline;
+  display: flex;
+  gap: 14px;
+  margin-top: 6px !important;
+}
+
+.paper-detail a {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.note {
+  font-size: 12.5px !important;
+  margin-top: 5px !important;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 15.5px;
+    line-height: 1.62;
+  }
+
+  .site-shell {
+    padding: 30px 21px 26px;
+  }
+
+  .page-layout {
+    display: block;
+  }
+
+  .author-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: static;
+    text-align: center;
+  }
+
+  .portrait {
+    aspect-ratio: 1;
+    height: auto;
+    margin: 0;
+    width: clamp(180px, 54vw, 210px);
+  }
+
+  .author-name {
+    font-size: 31px;
+    letter-spacing: -0.025em;
+    line-height: 1.12;
+    margin: 20px 0 15px;
+  }
+
+  .author-role {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .profile-links {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .profile {
+    padding-bottom: 34px;
+  }
+
+  .profile p {
+    margin-bottom: 13px;
+  }
+
+  .content-section {
+    padding: 35px 0 44px;
+  }
+
+  .content-section > h2 {
+    font-size: 25px;
+    margin-bottom: 23px;
+  }
+
+  .paper-item h3 {
+    font-size: 17px;
+    line-height: 1.38;
+  }
+
+  .paper-item {
+    padding-bottom: 24px;
+  }
+
+  .paper-list .paper-item,
+  .subsection-title + .paper-item {
+    padding-top: 23px;
+  }
+
+  .subsection-title {
+    margin-top: 30px !important;
+    padding-top: 25px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .paper-detail {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
