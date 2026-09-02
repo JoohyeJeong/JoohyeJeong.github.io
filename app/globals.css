@@ -68,7 +68,7 @@ a:focus-visible {
 
 .portrait img {
   display: block;
-  filter: brightness(1.04);
+  filter: brightness(1.06) contrast(1.03);
   height: 100%;
   object-fit: cover;
   object-position: 64% 50%;
