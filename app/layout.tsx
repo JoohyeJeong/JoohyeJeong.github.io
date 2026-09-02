@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       'Research in causal inference, experimental design, and media effects.',
     images: [
       {
-        url: `${basePath}/og.png`,
+        url: `${basePath}/og-v2.png`,
         width: 1200,
         height: 630,
         alt: 'Joohye Jeong — Political Science and Statistics at MIT',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Joohye Jeong',
     description:
       'Research in causal inference, experimental design, and media effects.',
-    images: [`${basePath}/og.png`],
+    images: [`${basePath}/og-v2.png`],
   },
 };
 
