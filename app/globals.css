@@ -47,7 +47,7 @@ a:focus-visible {
 .page-layout {
   align-items: start;
   display: grid;
-  gap: 64px;
+  gap: 70px;
   grid-template-columns: 242px minmax(0, 720px);
   justify-content: center;
 }
@@ -221,7 +221,7 @@ h3 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     position: static;
     text-align: center;
   }
