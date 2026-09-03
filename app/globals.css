@@ -53,6 +53,7 @@ a:focus-visible {
 }
 
 .author-card {
+  padding-top: 10px;
   position: sticky;
   text-align: center;
   top: 42px;
@@ -230,6 +231,7 @@ h3 {
     display: flex;
     flex-direction: column;
     margin-bottom: 34px;
+    padding-top: 0;
     position: static;
     text-align: center;
   }
