@@ -3,7 +3,6 @@ import Script from 'next/script';
 import './globals.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 const googleAnalyticsId = 'G-BXN926RN9B';
 
 export const metadata: Metadata = {
@@ -20,21 +19,12 @@ export const metadata: Metadata = {
     title: 'Joohye Jeong',
     description:
       'Research in causal inference, experimental design, and media effects.',
-    images: [
-      {
-        url: `${basePath}/og-v2.png`,
-        width: 1200,
-        height: 630,
-        alt: 'Joohye Jeong — Political Science and Statistics at MIT',
-      },
-    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Joohye Jeong',
     description:
       'Research in causal inference, experimental design, and media effects.',
-    images: [`${basePath}/og-v2.png`],
   },
 };
 
