@@ -79,8 +79,10 @@ export default function Home() {
               My research interests are in political methodology and political
               behavior, with a focus on causal inference, experimental design,
               and media effects. In my dissertation, I develop methods for
-              connecting experimental findings to political outcomes beyond the
-              study setting.
+              bridging experiments and real-world political phenomena, drawing
+              on both experimental and observational data to address gaps between
+              what research designs identify and the substantive questions
+              researchers seek to answer.
             </p>
             <p>
               Before joining MIT, I studied political science and economics at

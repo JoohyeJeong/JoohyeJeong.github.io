@@ -8,10 +8,16 @@ const siteUrl = (
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      {
+        userAgent: 'Googlebot-Image',
+        disallow: ['/og.png', '/og-v2.png'],
+      },
+    ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
