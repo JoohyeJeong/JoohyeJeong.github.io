@@ -58,6 +58,10 @@ a:focus-visible {
   top: 42px;
 }
 
+.main-column {
+  padding-top: 10px;
+}
+
 .portrait {
   border-radius: 3px;
   height: 236px;
@@ -215,6 +219,10 @@ h3 {
 
   .page-layout {
     display: block;
+  }
+
+  .main-column {
+    padding-top: 0;
   }
 
   .author-card {
